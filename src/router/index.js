@@ -8,21 +8,21 @@ import LogTime from '@/components/LogTime'
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'Home',
-      component: Home
-    }, {
-      path: '/home',
-      component: Home
-    }, {
-      path: '/time-entries',
-      component: TimeEntries,
-      children:[{
-        path:'log-time',
-        component:LogTime
-      }]
-    }
-  ]
+    routes: [
+        {
+            path: '/',
+            name: 'Home',
+            component: Home
+        }, {
+            path: '/home',
+            component: Home
+        }, {
+            path: '/time-entries',
+            component: TimeEntries,
+            children: [{
+                path: 'log-time',
+                component: LogTime
+            }]
+        }
+    ]
 })

@@ -14,22 +14,22 @@ Vue.config.productionTip = false
 Vue.use(VueResourse)
 //单页应用的路由定义  一个路由相当于一个location ， 相对于一个或多个component
 /*const routes = [{
-  path:'/',//路由路径
-  component:Home
-},{
-  path:'/home',
-  component:Home
-}]
+ path:'/',//路由路径
+ component:Home
+ },{
+ path:'/home',
+ component:Home
+ }]
 
-const router = new VueRouter({
-  routes
-})*/    //此处代码在router的index.js中
+ const router = new VueRouter({
+ routes
+ })*/    //此处代码在router的index.js中
 /* eslint-disable no-new */
 var app = new Vue({
-  el: '#app',
-  router,
-  store,   //组件插入数据流的功能
-  // template: '<App/>',
-  // components: { App }
-  render: h => h(App)
+    el: '#app',
+    router,
+    store,   //组件插入数据流的功能
+    // template: '<App/>',
+    // components: { App }
+    render: h => h(App)
 })

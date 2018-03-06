@@ -12,12 +12,12 @@ Vue.use(Vuex);
 
 //状态集合，全局管理的引起界面状态改变的值
 const state = {
-  totalTime:0,
-  list:[],
+    totalTime: 0,
+    list: [],
 }
 
 export default new Vuex.Store({
-  state,  //状态机制,状态树
-  mutations,  //改变
-  actions  //何种动作触发改变     组件不能直接改变state
+    state,  //状态机制,状态树
+    mutations,  //改变
+    actions  //何种动作触发改变     组件不能直接改变state
 })
